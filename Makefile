@@ -1,7 +1,7 @@
 CFLAGS=-c -g -Wall -Werror
 CC=gcc
 
-all: signal_handler.out signal_sigaction.out signal_alarm.out signal_segfault.out recv_signal.out send_signal.out
+all: signal_handler.out signal_sigaction.out signal_alarm.out signal_segfault.out recv_signal.out send_signal.out recv_ball.out send_ball.out
 
 signal_handler.out: signal_handler.o
 	$(CC) -o signal_handler.out signal_handler.o
@@ -20,6 +20,13 @@ recv_signal.out: recv_signal.o
 
 send_signal.out: send_signal.o
 	$(CC) -o send_signal.out send_signal.o
+
+recv_ball.out: recv_ball.o
+	$(CC) -o recv_ball.out recv_ball.o
+
+send_ball.out: send_ball.o
+	$(CC) -o send_ball.out send_ball.o
+
 
 clean:
 	rm -f *.o *.out
