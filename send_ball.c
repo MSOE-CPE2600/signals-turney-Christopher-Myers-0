@@ -3,6 +3,10 @@
  * Modified by: Christopher Myers
  * 
  * Brief summary of program:
+        Start this after recv_ball.out. Use the pid listed
+        there as a command line argument when running this program.
+
+        Simulates a game of ping pong. First to 11
  */
 
 #include <stdio.h>

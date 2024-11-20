@@ -3,7 +3,10 @@
  * Modified by: Christopher Myers
  * 
  * Brief summary of program:
-        
+        Start this first. Note the pid it prints.
+        Then start send_ball.out with the pid as a command line argument.
+
+        Simulates a game of ping pong. First to 11
  */
 
 #include <stdio.h>
